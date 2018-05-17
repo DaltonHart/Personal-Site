@@ -2,15 +2,4 @@
     border: 2px solid red;
 }
 
-body{
-    border: 4px dotted green;
-}
-
-.redText{
-    color: red; 
-}
-
-p {
-   border: 2px dashed rgba(255, 111, 110, 1);
-}
 
