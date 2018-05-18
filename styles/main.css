@@ -1,5 +1,35 @@
-*{
-    border: 2px solid red;
+
+body {
+    box-sizing: border-box;
 }
 
+#particles-js{
+    background: url(/assets/grey-texture.gif);
+}
+#logo{
+    margin: 0;
+    width: 100%;
+}
+header {
+    margin: 0;
+    padding: 0;
+    width: 5em;
+}
+.svg {
+    filter: grayscale(1) brightness(.3);
 
+}
+.svg:hover {
+    filter: grayscale(0)
+}
+
+.col, .col-2 {
+    padding:0;
+}
+
+nav {
+    background: #000;
+}
+article {
+    background: yellow;
+}
