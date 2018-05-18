@@ -7,24 +7,89 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://www.jqueryscript.net/animation/Basic-Cross-platform-One-Page-Scroll-Plugin-jQuery-fullpage.html"></script>
+    <script src="scripts/jquery.fullpage.js"></script>
     <script src="scripts/app.js"></script>
 </head>
 <body>
-    <main class="row container">
-        <header class="col-2">
+    <main class="whole-container row">
+        <header class="side-container col-2">
             <img id="logo" src="/assets/personallogo.png">
-            <nav>
-                <a href="#"><img class="svg" src="/assets/Home.svg"></a>
-                <a href="#"><img class="svg" src="/assets/Floder-1.svg"></a>
-                <a href="#"><img class="svg" src="/assets/Speech Bubble-9.svg"></a>
-                <a href="#"><img class="svg" src="/assets/Envelope-1.svg"></a>
-            </nav>
+                <nav class="navBar row">
+                    <a href="#"><img class="svg" src="/assets/Home.svg"></a>
+                    <a href="#"><img class="svg" src="/assets/Floder-1.svg"></a>
+                    <a href="#"><img class="svg" src="/assets/Speech Bubble-9.svg"></a>
+                    <a href="#"><img class="svg" src="/assets/Envelope-1.svg"></a>
+                </nav>
+                <div class=" footer row">
+                    <span>&copy;DaltonH 2018</span>
+                </div>
         </header>
-        <section id='particles-js' class="col">
-            <article>
-                <p> blarg blarg blarg blarg</p>
-            </article>
+        <section id='fullpage' class="col">
+                <section id="home" class="row">
+                        <section class="collage col-4">
+                            <section class="row">
+                            <section class="left col-6">
+                                    <img class="row" src="/assets/19390625_1473492146031059_8680993486334767572_o.jpg">
+                                    <img class="row" src="/assets/22730618_1581368945243378_8102404034698418713_n.jpg">
+                                    <img class="row" src="/assets/27858257_1684415764938695_4971176944652139299_n.jpg">
+                            </section>
+                            <section class="right col-6">
+                                    <img class="row" src="/assets/24312459_1622220974491508_1544465324666752224_n.jpg">
+                                    <img class="row" src="/assets/29597433_1733822883331316_3515013680891218003_n.jpg">
+                                    <img class="row" src="/assets/31949686_1768416326538638_9136480776827699200_o.jpg">
+                            </section>
+                        </section>
+                        </section>
+                        <article class="about col-4">
+                            <h1>Dalton Hart</h1>
+                            <h2>Fullstack Web Developer</h2>
+                            <h4>Graphic Designer - Blockchain Enthusiast</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem, rerum commodi blanditiis culpa consequatur dolor deleniti perferendis quidem, error optio recusandae sunt et quibusdam excepturi expedita eum, facere consequuntur?</p>
+                        </article>
+                        <div id="particles-js" class="col-4"></div>
+                </section>
+                    <section id="projects" class="row">
+                            <p>projects</p>
+                    </section>
+                    <section id="testimonies" class="row">
+                            <p>testimonies</p>
+                    </section>
+                <section id="contact-me" class="row">
+                    <div class="contact-form col">
+                            <h2> GET IN TOUCH </h2>
+                        <form class="row">
+                            <div class="row">
+                                <div class="col"> 
+                                    <input class="name" type="name" name="name" placeholder="NAME">
+                                </div>
+                                <div class="col">
+                                    <input class="email" type="text" name="Email Address" placeholder="EMAIL">
+                                </div>
+                                <div class="col">
+                                        <input class="name" type="text" name="subject" placeholder="SUBJECT">
+                                </div>
+                            </div>    
+                            <div class="row">
+                                    <textarea class="comment" name="comment" row="5" placeholder="COMMENT"></textarea>
+                            </div>
+                            <div class="row">
+                                    <input class="button1" type="submit" value="SUBMIT">
+                            </div>
+                        </form>
+                    </div>
+                    <section class="col social">
+                        <h2 class="row">Join me on Social Media</h2>
+                        <a href="#"><img class="svg" src="/assets/Facebook.svg"></a>
+                        <a href="#"><img class="svg" src="/assets/Twitter-2.svg"></a>
+                        <a href="#"><img class="svg" src="/assets/Youtube.svg"></a>
+                        <a href="#"><img class="svg" src="/assets/Glitch_Black_RGB.svg"></a>
+                        <div class="twitterApi">twitter feed here</div>
+                    </section>
+                    </section>
+                    
         </section>
+        
     </main>
 </body>
 </html>

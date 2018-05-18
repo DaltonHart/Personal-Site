@@ -1,11 +1,22 @@
 
-body {
+html, body {
+    margin: 0px;
+    min-height: 100%;
+    padding: 0;
     box-sizing: border-box;
-}
+    background: #000;
+    color: #000;
+ }
+
 
 #particles-js{
-    background: url(/assets/grey-texture.gif);
+    background: url(/assets/logobackdrop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    border: 4px solid #000;
 }
+
 #logo{
     margin: 0;
     width: 100%;
@@ -14,22 +25,128 @@ header {
     margin: 0;
     padding: 0;
     width: 5em;
-}
-.svg {
-    filter: grayscale(1) brightness(.3);
-
-}
-.svg:hover {
-    filter: grayscale(0)
+    background: #000;
 }
 
-.col, .col-2 {
+
+.col, .col-2, .col-6,.col-4{
     padding:0;
+}
+
+.row{
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
     background: #000;
 }
-article {
-    background: yellow;
+
+.navBar {
+    background: #000;
+    height: 60%;
+    margin-top: 20%;
+}
+.svg {
+    filter: grayscale(1) brightness(.6);
+    padding: 1em;
+    height: 80px;
+    
+}
+
+.svg:hover {
+    filter: grayscale(0)
+}
+
+.footer {
+    bottom: 0;
+    margin-top: 20em;
+    color: rgb(158, 151, 151);
+}
+a, .left, .right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.whole-container{
+    height: 100%;
+}
+.side-container{
+    height: 100%; 
+    width: 100px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+}
+
+#fullpage{
+    background: url(/assets/grey-texture.gif);
+    background-position: static;
+    position: relative;
+    margin-left: 100px;
+    height: 100%;
+    padding: 1em;
+    overflow: hidden;
+}
+
+/* Home About Me Section */
+#home {
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.collage img {
+    width:100%;
+    padding: .5em;
+    border: 4px solid #000;
+    background: #fff;
+}
+.about h1, .about h2, .about h4{
+    text-align: center;
+    text-decoration: underline;
+}
+.about p{
+    background: rgb(104, 100, 100);
+    padding: 2em;
+}
+/* Projects */
+#projects{
+    height: 100vh;
+}
+/* Testimonies */
+#testimonies{
+    height: 100vh;
+}
+/* Contact Me Area */
+#contact-me{
+    border: 4px solid #000;
+    height: 100vh;
+    z-index: 4;
+}
+.social a {
+    display: inline;
+}
+.social , .social h2{
+    background: #fff;
+    text-align: center;
+}
+.contact-form {
+    background: #fff;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 2em;
+}
+form {
+    height: 200px;
+   
+}
+input, textarea {
+    width: 100%;
 }
