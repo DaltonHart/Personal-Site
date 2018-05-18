@@ -84,7 +84,7 @@ a, .left, .right{
     left: 0;
 }
 
-#fullpage{
+#main-content{
     background: url(/assets/grey-texture.gif);
     background-position: static;
     position: relative;
@@ -97,8 +97,6 @@ a, .left, .right{
 /* Home About Me Section */
 #home {
     height: 100vh;
-    margin-top: 50px;
-    margin-bottom: 100px;
 }
 
 .collage img {
