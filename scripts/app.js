@@ -1,14 +1,13 @@
 $(document).ready(function() {
 
+  //sanity check
 console.log('Im working!');
+
 //function to call particles.json
 particlesJS.load('particles-js', 'scripts/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
 
-$('.homeLnk').on('click',function(){
-  console.log('clicked jQuery works');
-})
 //scroll function
 $(".navBar").find("a").on('click',function(e) {
   e.preventDefault();
@@ -19,11 +18,34 @@ $(".navBar").find("a").on('click',function(e) {
   });
 });
 
+//highlight on scroll
+function onScroll(event){
+  //find scroll position
+  var scrollPos = $(document).scrollTop();
+  //run through each navbar item and for each position of the element add and remove class
+  $('.navBar a').each(function(){
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    //if position is equal to the elemt attr 
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos){
+     //sanitize
+      $('.navBar a').children('img').removeClass("active");
+     //add class active
+      currLink.children('img').addClass("active");
+    }
+    else {
+      //remove class
+      currLink.children('img').removeClass("active");
+    }
+  });
+}
+//call function
+$(document).on('scroll',onScroll);
 
-//google maps api to show sf area 
+/*Scripts for Social area*/
+//google maps api to show sf area in Contact area
 var map;
 var googleMap = function () {
-  console.log('map!');
   //custom styled map
   var styledMapType = new google.maps.StyledMapType(
     [

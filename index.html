@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -17,7 +18,7 @@
         <header class="side-container col-2">
             <img id="logo" src="/assets/personallogo.png">
                 <nav class="navBar row">
-                    <a class="homeLnk" href="#main-content"><img class="svg" src="/assets/Home.svg"></a>
+                    <a href="#main-content"><img class="svg active" src="/assets/Home.svg"></a>
                     <a href="#projects"><img class="svg" src="/assets/Floder-1.svg"></a>
                     <a href="#testimonies"><img class="svg" src="/assets/Speech Bubble-9.svg"></a>
                     <a href="#contact-me"><img class="svg" src="/assets/Envelope-1.svg"></a>
@@ -71,7 +72,7 @@
                     </section>
                 <section id="contact-me" class="row">
                     <div class="contact-form col">
-                            <h2> GET IN TOUCH </h2>
+                            <h2> GET IN TOUCH! </h2>
                         <form class="row">
                             <div class="row">
                                 <div class="row"> 
@@ -84,21 +85,27 @@
                                         <input class="name" type="text" name="subject" placeholder="SUBJECT">
                                 </div>
                             </div>    
-                            <div class="row">
-                                    <textarea class="comment" name="comment" row="5" placeholder="COMMENT"></textarea>
+                            <div class="row comment">
+                                    <textarea class="comment" name="comment" row="8" cols="20" placeholder="COMMENT"></textarea>
                             </div>
-                            <div class="row">
+                            <div class="row submit">
                                     <input class="sumbitBut" type="submit" value="SUBMIT">
                             </div>
                         </form>
                     </div>
                     <section class="col social">
-                        <h2 class="row">Join me on Social Media</h2>
-                        <a href="#"><img class="svg" src="/assets/Facebook.svg"></a>
-                        <a href="#"><img class="svg" src="/assets/Twitter-2.svg"></a>
-                        <a href="#"><img class="svg" src="/assets/Youtube.svg"></a>
-                        <a href="#"><img class="svg" src="/assets/Glitch_Black_RGB.svg"></a>
-                        <div class="twitterApi">twitter feed here</div>
+                        <h2>Join me on Social Media</h2>
+                        <div class="row spacer">
+                        <section class="icons col-2">
+                                <a target="_blank" href="https://www.facebook.com/varenknight" class="row"><img class="svg" src="/assets/Facebook.svg"></a>
+                                <a target="_blank" href="https://twitter.com/DaltonJHart" class="row"><img class="svg" src="/assets/Twitter-2.svg"></a>        
+                                <a target="_blank" href="https://www.youtube.com/channel/UCFkGHDaH6q9f84_GKqnRzbg" class="row"><img class="svg" src="/assets/Youtube.svg"></a>
+                                <a target="_blank" href="https://www.twitch.tv/varenmedia/" class="row"><img class="svg" src="/assets/Glitch_Black_RGB.svg"></a>        
+                            </section>
+                        <div class="twitterApi col">
+                            <a class="twitter-timeline" href="https://twitter.com/DaltonJHart?ref_src=twsrc%5Etfw" ></a>
+                        </div>
+                    </div>
                     </section>
                     <div id="map"></div>
                     </section>
