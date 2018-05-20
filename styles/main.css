@@ -8,7 +8,11 @@ html, body {
     color: #000;
     font-family: 'Roboto', sans-serif;
  }
-
+ .container {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+ }
 
 /* nav bar */
 #logo{
@@ -83,7 +87,7 @@ a, .left, .right{
 }
 
 #main-content{
-    background: #555;
+    background: #222;
     background-position: static;
     position: relative;
     margin-left: 100px;
@@ -95,13 +99,15 @@ a, .left, .right{
 /* Home About Me Section */
 #home {
     height: 100vh;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: 0;
 }
+
 .collage {
     width: 100%;
-    max-height: 60vh;
     filter: drop-shadow(15px 15px 20px #000);
+    margin-bottom: 6em;
 }
 .collage img {
     width:100%;
@@ -109,18 +115,24 @@ a, .left, .right{
     border: 4px solid #000;
     background: #fff;
 }
+.collage-col {
+    max-width:85%;
+    margin-left: 1em;
+    margin-right:.5em;
+}
 .about .name {
     background: linear-gradient(to bottom right, orange, yellow);
     border: 4px solid #000;
     padding: .5em;
-    margin: 0 2em;
+    margin-left: 0em;
+    margin-right: 3em;
     filter: drop-shadow(15px 15px 20px #000);
 }
 .about h1{
     color: red;
-    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-width: 3px;
    -webkit-text-stroke-color: black;
-   font-size: 4em;
+   font-size: 5em;
 }
 .about h1, .about h2, .about h4{
     font-family: 'Bangers', cursive;
@@ -131,9 +143,18 @@ a, .left, .right{
     background: white;
     border: 4px solid #000;
     padding: 2em;
+    padding-bottom: 4em;
     margin: 2em;
+    margin-left: 0;
+    margin-right: 3em;
+    margin-top: 0;
     max-height: 60vh;
     filter: drop-shadow(15px 15px 20px #000);
+    font-size: .75em;
+    display: inline-block;
+}
+.about article {
+    width: 100%;
 }
 #particles-js{
     background: url(/assets/logobackdrop.png);
@@ -157,17 +178,67 @@ a, .left, .right{
     margin: 6em;
     filter: drop-shadow(15px 15px 20px #000);
 }
+#projects h2{
+    font-family: 'Bangers',cursive;
+    text-align: center;
+    color: red;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    font-size: 2.5em;
+    background: linear-gradient(to bottom right, orange, yellow);
+    border: 4px solid #000;
+    margin-top: 1em;
+    margin-bottom: .2em;
+    padding: 10px;
+    max-height: 2em;
+}
 /* Testimonies */
 #testimonies{
     height: 100vh;
     margin-top: 2em;
     margin-bottom: 2em;
 }
-#testimonies section{
+#testimonies .container{
+    padding: 0;
+}
+#testimonies  h2{
+    font-family: 'Bangers',cursive;
+    text-align: center;
+    color: red;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    font-size: 2.5em;
+    background: linear-gradient(to bottom right, orange, yellow);
+    border: 4px solid #000;
+    margin-top: 1em;
+    margin-bottom: .2em;
+    padding: 10px;
+    max-height: 2em;
+}
+#testimonies > section{
     background: #fff;
     border: 4px black solid;
-    margin: 6em;
+    margin: 1em;
+    margin-top: 0;
+    margin-bottom: 2em;
     filter: drop-shadow(15px 15px 20px #000);
+}
+#testimonies .sponsor{
+    background: #fff;
+    border: 4px black solid;
+    margin: 1em;
+    filter: drop-shadow(15px 15px 20px #000);
+}
+#testimonies  .sponsor-comment{
+    background: #fff;
+    border: 4px black solid;
+    margin: 1em;
+    padding: 2em;
+    filter: drop-shadow(15px 15px 20px #000);
+}
+#testimonies img {
+    width: 100%;
+    height: 100%;
 }
 /* Contact Me */
 #contact-me{
@@ -183,6 +254,8 @@ a, .left, .right{
     display: inline-block;
     width: 100%;
     margin: 6em;
+    margin-right: 4em;
+    margin-left: 1em;
     padding: 2em;
     border: #000 4px solid;
     z-index: 100;
@@ -192,20 +265,20 @@ a, .left, .right{
     font-family: 'Bangers',cursive;
     text-align: center;
     color: red;
-    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
-    font-size: 4em;
+    font-size: 3em;
     background: linear-gradient(to bottom right, orange, yellow);
     border: 4px solid #000;
 }
 .contact-form form {
     height: 90%;
-    margin-top: 4em;
+    margin-top: .2em;
 }
 input, textarea {
     width: 100%;
     border: #000 4px solid;
-    font-size: 1.5em;
+    font-size: 1em;
     padding-left: .5em;
 }
 textarea{
@@ -213,19 +286,21 @@ textarea{
     width: 100%;
 }
 .comment {
-    height: 12em;
+    height: 6em;
 }
 .submit {
-    height: 6em;
+    height: 4em;
 }
 .submit input {
     background: #E46F64;
 }
 
-/*Social media Area*/
+/*Social Media Area*/
 .social {
     border: 4px black solid;
     margin: 6em;
+    margin-left: 3em;
+    margin-right: 1em;
     z-index: 1;
     padding: 2em;
     filter: drop-shadow(15px 15px 20px #000);
@@ -242,20 +317,20 @@ textarea{
     font-family: 'Bangers',cursive;
     text-align: center;
     color: red;
-    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
-    font-size: 4em;
+    font-size: 2.5em;
     background: linear-gradient(to bottom right, orange, yellow);
     border: 4px solid #000;
 }
 .social .spacer {
-    margin-top: 4em;
+    margin-top: 1em;
 }
 .social .svg{
-    height: 9em;
+    height: 5em;
 }
 .icons {
-    width: 4em;
+    width: 1em;
 }
 .social .col-2 {
     margin-right: 4em;
@@ -269,7 +344,7 @@ textarea{
 }
 .twitter-timeline {
     max-width: 100%;
-    max-height: 630px;
+    max-height: 360px;
 }
 /*Map Background*/
 #map {
@@ -280,4 +355,14 @@ textarea{
     left: 0; 
     right: 0; 
     z-index: 0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    align-content: center;
 }

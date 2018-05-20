@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="scripts/app.js"></script>
 </head>
 <body>
@@ -28,15 +28,15 @@
                 </div>
         </header>
         <section id='main-content' class="col">
-                <section id="home" class="row">
-                        <section class="collage col-4">
-                            <section class="row">
-                            <section class="left col-6">
+                <section id="home" class="row clearfix ">
+                        <section class="collage col-4 clearfix">
+                            <section class="collage-col row clearfix">
+                            <section class="left col-6 clearfix">
                                     <img class="row" src="/assets/19390625_1473492146031059_8680993486334767572_o.jpg">
                                     <img class="row" src="/assets/22730618_1581368945243378_8102404034698418713_n.jpg">
                                     <img class="row" src="/assets/27858257_1684415764938695_4971176944652139299_n.jpg">
                             </section>
-                            <section class="right col-6">
+                            <section class="right col-6 clearfix">
                                     <img class="row" src="/assets/24312459_1622220974491508_1544465324666752224_n.jpg">
                                     <img class="row" src="/assets/29597433_1733822883331316_3515013680891218003_n.jpg">
                                     <img class="row" src="/assets/31949686_1768416326538638_9136480776827699200_o.jpg">
@@ -65,24 +65,31 @@
                         <div id="particles-js" class="col-4"></div>
                 </section>
                     <section id="projects" class="row">
+                            <h2>Projects</h2>
                             <section class="row">
-                                <article>  </article>
-                                <article>  </article>
-                                <article>  </article>
+                                
                             </section>
                     </section>
-                    <section id="testimonies" class="row">
-                            <section class="row">
-                                    <article>  </article>
-                                    <article>  </article>
-                                    <article>  </article>
+                    <section id="testimonies" class="row container">
+                            <h2>Testimonies</h2>
+                            <section class="row clearfix">
+                                    <article class="row"> 
+                                        <section class="col sponsor"><img src=""></section>
+                                        <section class="col sponsor-comment">
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </section>
+                                    </article>
                             </section>
                     </section>
                 <section id="contact-me" class="row">
                     <div class="contact-form col">
                             <h2> GET IN TOUCH! </h2>
                         <form class="row">
-                            <div class="row">
+                            <div class="row clearfix">
                                 <div class="row"> 
                                     <input class="name" type="name" name="name" placeholder="NAME">
                                 </div>
@@ -110,15 +117,13 @@
                                 <a target="_blank" href="https://www.youtube.com/channel/UCFkGHDaH6q9f84_GKqnRzbg" class="row"><img class="svg" src="/assets/Youtube.svg"></a>
                                 <a target="_blank" href="https://www.twitch.tv/varenmedia/" class="row"><img class="svg" src="/assets/Glitch_Black_RGB.svg"></a>        
                             </section>
-                        <div class="twitterApi col">
+                        <div class="twitterApi col container">
                             <a class="twitter-timeline" href="https://twitter.com/DaltonJHart?ref_src=twsrc%5Etfw" ></a>
                         </div>
                     </div>
                     </section>
                     <div id="map"></div>
                     </section>
-                    
-                    
                 </section>
         
     </main>
