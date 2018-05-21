@@ -11,7 +11,6 @@ particlesJS.load('particles-js', 'scripts/particles.json', function() {
 //scroll function
 $(".navBar").find("a").on('click',function(e) {
   e.preventDefault();
-  console.log('clicked the nav bar');
   var section = $(this).attr("href");
   $("html, body").animate({
       scrollTop: $(section).offset().top
@@ -42,26 +41,27 @@ function onScroll(event){
 //call function
 $(document).on('scroll',onScroll);
 
+
 // Scripts for project area carosel 
 
 var slides = [
   {
-    img: '/assets/duncan.jpg',
-    title: 'Project1',
-    description: 'this is a description',
-    url: 'link to page'
+    img: '/assets/monument.png',
+    title: 'Monument Mock Up',
+    description: 'For this project I took a full mockup and recreated it into a full functioning website.',
+    url: `<a href='https://github.com/DaltonHart/Monument-Mockup'> GitHub </a>`
   },
   {
-    img: '/assets/duncan.jpg',
-    title: 'Project2',
-    description: 'this is a description',
-    url: 'link to page'
+    img: '/assets/geoquake.png',
+    title: 'Geoquakes',
+    description: 'A fun project to combine two apis into a website. Combined the google maps Api and and earthquake information into a live map showing earthquake locations.',
+    url: `<a href='https://github.com/DaltonHart/Geoquakes'> GitHub </a>`
   },
   {
-    img: '/assets/duncan.jpg',
-    title: 'Project3',
-    description: 'this is a description',
-    url: 'link to page'
+    img: '/assets/website.png',
+    title: 'Portfolio Site',
+    description: 'This entire website was made by myself. Feel free to check out the Github!',
+    url: `<a href='https://github.com/DaltonHart/Personal-Site'> GitHub </a>`
   },
 ];
 
@@ -85,7 +85,7 @@ function changeSlide (){
   $('.progImg img').attr('src', slides[indexCount].img);
   $('.title').text(`Title: ${slides[indexCount].title}`);
   $('.description').text(`Description: ${slides[indexCount].description}`);
-  $('.url').text(`URL: ${slides[indexCount].url}`);
+  $('.url').html(`${slides[indexCount].url}`);
 }
 
 
@@ -133,7 +133,9 @@ function changeSponsor(){
           $('.sponsor-comment ul li:nth-child(2)').text(`Relation: ${sponsors[i].relation}`);
           $('.sponsor-comment ul li:nth-child(3)').text(`"${sponsors[i].message}"`);
           
+          
         }, i * 8000);
+        
     });
 }
 
