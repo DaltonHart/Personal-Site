@@ -44,6 +44,22 @@ $(document).on('scroll',onScroll);
 
 // Scripts for project area carosel 
 
+var slides = $('.slides');
+var indexCount = 0;
+ //click functions to alter index
+$('.next').on('click',function (){
+  indexCount = indexCount + 1;
+  console.log(indexCount);
+  slides[indexCount].removeClass('hidden');
+ });
+
+$('.prev').on('click',function(){
+  indexCount = indexCount - 1;
+  console.log(indexCount);
+  
+})
+
+
 
 
 

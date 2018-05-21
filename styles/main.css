@@ -175,7 +175,7 @@ a, .left, .right{
 #projects section{
     background: #fff;
     border: 4px black solid;
-    margin: 6em;
+    margin: 2em;
     filter: drop-shadow(15px 15px 20px #000);
 }
 #projects h2{
@@ -191,6 +191,31 @@ a, .left, .right{
     margin-bottom: .2em;
     padding: 10px;
     max-height: 2em;
+}
+#projects .slide-container {
+    margin:auto;
+}
+#projects article {
+    background: #fff;
+    border: 4px black solid;
+    filter: drop-shadow(15px 15px 20px #000);
+    margin: 1em;
+}
+.next, .prev {
+    margin: auto;
+    text-align: center;
+}
+.nextcol, .prevcol{
+    margin: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+}
+#projects .hidden {
+    display: none;
+}
+#projects .show {
+    display: flex;
 }
 /* Testimonies */
 #testimonies{
