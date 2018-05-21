@@ -44,21 +44,49 @@ $(document).on('scroll',onScroll);
 
 // Scripts for project area carosel 
 
-var slides = $('.slides');
+var slides = [
+  {
+    img: '/assets/duncan.jpg',
+    title: 'Project1',
+    description: 'this is a description',
+    url: 'link to page'
+  },
+  {
+    img: '/assets/duncan.jpg',
+    title: 'Project2',
+    description: 'this is a description',
+    url: 'link to page'
+  },
+  {
+    img: '/assets/duncan.jpg',
+    title: 'Project3',
+    description: 'this is a description',
+    url: 'link to page'
+  },
+];
+
 var indexCount = 0;
  //click functions to alter index
 $('.next').on('click',function (){
   indexCount = indexCount + 1;
   console.log(indexCount);
-  slides[indexCount].removeClass('hidden');
- });
+  changeSlide();
+});
 
 $('.prev').on('click',function(){
   indexCount = indexCount - 1;
   console.log(indexCount);
-  
-})
+  changeSlide();
+});
 
+changeSlide();
+
+function changeSlide (){
+  $('.progImg img').attr('src', slides[indexCount].img);
+  $('.title').text(`Title: ${slides[indexCount].title}`);
+  $('.description').text(`Description: ${slides[indexCount].description}`);
+  $('.url').text(`URL: ${slides[indexCount].url}`);
+}
 
 
 
