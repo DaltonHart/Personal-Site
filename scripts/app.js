@@ -41,6 +41,11 @@ function onScroll(event){
 //call function
 $(document).on('scroll',onScroll);
 
+// Hamburger Script
+$('.hamburger').on('click',function(){
+  $('.side-container').toggle();
+})
+
 
 // Scripts for project area carosel 
 
@@ -103,13 +108,13 @@ var sponsors = [
   {
     name: 'Giselle Canada',
     relation: 'Coworker',
-    message: 'After everything already said about Dalton it’s clear to see the impact he has had and continues to have on so many different people. What you may not know is he recently moved from his hometown to the Bay Area, taking a huge leap of faith with his career and even through all of that stress and transition he still has had the same impact on a whole new group of people, including me. When I met him I instantly respected and admired him just by the way he carries himself. As my close peer, he drives me to be the best so I can maybe be as great as him one day! He’s extremely dependable and consistent, if anyone is looking for an amazing investment look no further than Dalton!',
+    message: 'After everything already said about Dalton it’s clear to see the impact he has had and continues to have on so many different people. What you may not know is he recently moved from his hometown to the Bay Area, taking a huge leap of faith with his career and even through all of that stress and transition he still has had the same impact on a whole new group of people, including me. When I met him I instantly respected and admired him just by the way he carries himself. As my close peer, he drives me to be the best so I can maybe be as great as him one day!',
     img:'/assets/giselle.jpg',
   },
   {
     name: 'Duncan Nankervis',
     relation: 'Friend',
-    message: "I met Dalton through my girlfriend 4 years ago, and in those short 4 years I have gained a brother. I owe a lot to my friend, Dalton. He is a selfless, generous, and wonderful individual. He has one of the best work-ethics I have ever seen, and goes full speed into helping others achieve their dreams. If there is one person I know that deserves the opportunity to follow his own dreams for a change, it would be Dalton, one of the most important people I have the blessing to have in my life. I endorse this guy 100%, his word is good, and his intentions pure. Lets give him the chance, because a chance is all he needs to be successful.",
+    message: "I met Dalton through my girlfriend 4 years ago, and in those short 4 years I have gained a brother. I owe a lot to my friend, Dalton. He is a selfless, generous, and wonderful individual. He has one of the best work-ethics I have ever seen, and goes full speed into helping others achieve their dreams. If there is one person I know that deserves the opportunity to follow his own dreams for a change, it would be Dalton, one of the most important people I have the blessing to have in my life. I endorse this guy 100%, his word is good, and his intentions pure.",
     img: '/assets/duncan.jpg',
   },
   {
